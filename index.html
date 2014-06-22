@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="mozilla">
+	<title>Recruito - Mozilla Event selector tools</title>
+	 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="plugins/jquery-ui/jquery.ui.1.10.2.ie.css"/><![endif]-->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <!--[if IE 7]><link rel="stylesheet" href="assets/css/fontawesome/font-awesome-ie7.min.css"><![endif]--><!--[if IE 8]><link href="assets/css/ie8.css" rel="stylesheet" type="text/css"/><![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/libs/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<!--[if lt IE 9]><script src="assets/js/libs/html5shiv.js"></script><![endif]-->
+    
+    <script src="plugins/respond/respond.min.js" type="text/javascript"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
+    <script src="recruito.js" type="text/javascript"></script>
+    <script>
+$(document).ready(function(){App.init();Plugins.init();FormComponents.init()});
+    </script>
+    <script src="assets/js/custom.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="widget box">
+		<div class="widget-header">
+			<h4><i class="icon-reorder"></i>Mozilla Selective event invite portal</h4>
+		</div>
+	</div>
+	<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+		<div class="widget box">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Gravatar</th>
+						<th>Username</th>
+						<th>Repositories</th>
+						<th>Commits</th>
+						<th>No. of orgs</th>
+					</tr>
+				</thead>
+				<!-- Block to be repeated -->
+				<tbody>
+					<tr>
+						<td><img src="{{source link}}" alt="{{username}}"></td>
+						<td>{{username}}</td>
+						<td>
+							<table class="table table-striped">
+								
+									<tr>
+										<td>{{language value}}</td>
+										<td>{{count}}</td>
+									</tr>
+								
+							</table>
+						</td>
+						<td>{{commits}}</td>
+						<td>{{organization count}}</td>
+					</tr>
+				</tbody>
+				<!-- End block -->
+			</table>
+		</div>
+		</div> 
+	</div>
+	</div>
+	</div>
+</body>
+</html>
